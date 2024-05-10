@@ -11,7 +11,6 @@ export default async function Home({searchParams}) {
     throw new Error('Failed to fetch movies')
   }
   const movies = data.results
-  console.log(movies)
   return (
     <div>
       <MovieCard movies={movies} />
