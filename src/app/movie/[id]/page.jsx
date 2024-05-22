@@ -7,7 +7,6 @@ export default async function MoviePage({params}) {
     const movieId = params.id
     const res = await fetch(`https://api.themoviedb.org/3/movie/${movieId}?api_key=${process.env.API_KEY}`)
     const movie = await res.json()
-    console.log(movie)
   return (
     <div className='max-w-7xl mx-auto'>
         <div className='flex justify-between py-10 items-center'>
